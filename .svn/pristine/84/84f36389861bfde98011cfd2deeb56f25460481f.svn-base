@@ -1,0 +1,12 @@
+com\xmbl\ops\controller\systemConst\SystemConst.class
+com\xmbl\ops\dao\base\EntityMongoLoginDaoImpl.class
+com\xmbl\ops\entity\WxLogin.class
+com\xmbl\ops\controller\wxAuth\WxLoginController.class
+com\xmbl\ops\service\WxLoginService.class
+com\xmbl\ops\util\SpringApplicationContextHolder.class
+com\xmbl\ops\service\impl\WxLoginServiceImpl.class
+com\xmbl\ops\dao\base\IEntityDao.class
+com\xmbl\ops\util\AuthUtil.class
+com\xmbl\ops\util\PropertyUtil.class
+com\xmbl\ops\controller\IndexController.class
+com\xmbl\ops\dao\mongo\WxLoginDao.class

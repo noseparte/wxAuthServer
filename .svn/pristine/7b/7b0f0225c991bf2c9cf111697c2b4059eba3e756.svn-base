@@ -1,0 +1,1 @@
+protoc --proto_path=D:\code\server\block\wxAuthServer\src\main\resources\proto --java_out=D:\code\server\block\wxAuthServer\src\main\java MsgObject.proto,PbPlayer.proto,StateTree.proto

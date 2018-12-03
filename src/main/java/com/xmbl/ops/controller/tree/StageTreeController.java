@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
-import com.googlecode.protobuf.format.JsonFormat;
 import com.xmbl.ops.controller.AbstractController;
 import com.xmbl.ops.dto.ResponseResult;
 import com.xmbl.ops.entity.tree.base.StageTreeRes;
@@ -65,10 +64,7 @@ public class StageTreeController extends AbstractController {
 			return errorJson("ID不能为空");
 		}
 		StageTreeRes res = stageTreeService.getStageTreeRes(treeId, stageId);
-		
-		String jsonString = JsonFormat.printToString(res.transfer());
-		JSONObject jsonObject = JSONObject.parseObject(jsonString);
-		return successJson("", jsonObject);
+		return successJson("", res);
 	}
 
 	@RequestMapping("/local/treeinfo")
